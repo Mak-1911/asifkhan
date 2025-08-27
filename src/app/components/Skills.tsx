@@ -26,10 +26,11 @@ export default function Skills() {
                             <AnimatedSection 
                                 key={skill} 
                                 animation="scaleIn" 
-                                delay={200 + (index * 50)}
+                                delay={300 + (index * 80)}
+                                duration={400}
                                 className="inline-block"
                             >
-                                <div className="inline-flex mt-2 items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-white text-black shadow hover:bg-gray-100">
+                                <div className="inline-flex mt-2 items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-input bg-background text-foreground hover:bg-accent transition-all duration-300">
                                     {skill}
                                 </div>
                             </AnimatedSection>

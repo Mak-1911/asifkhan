@@ -115,7 +115,7 @@ const projects: Project[] = [
 
 function ProjectCard({ project }: { project: Project }) {
     return (
-        <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full">
+        <div className="rounded-lg bg-background text-card-foreground flex flex-col overflow-hidden border border-input hover:shadow-lg transition-all duration-300 ease-out h-full hover-effect">
             <a className="block cursor-pointer" href={project.repo} target="_blank" rel="noopener noreferrer">
                 {project.mediaType === "video" && project.mediaSrc && (
                     <video
@@ -160,7 +160,7 @@ function ProjectCard({ project }: { project: Project }) {
             <div className="flex items-center pt-2 px-2 pb-2">
                 <div className="flex flex-row flex-wrap items-start gap-1">
                     <a target="_blank" href={project.repo} rel="noopener noreferrer">
-                        <div className="items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
+                        <div className="hover-effect items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-input bg-background text-foreground hover:bg-accent flex gap-2 px-2 py-1 text-[10px] transition-all duration-300">
                             <svg viewBox="0 0 438.549 438.549" className="size-3" aria-hidden="true">
                                 <path
                                     fill="currentColor"
@@ -172,7 +172,7 @@ function ProjectCard({ project }: { project: Project }) {
                     </a>
                     {project.demo && (
                         <a target="_blank" href={project.demo} rel="noopener noreferrer">
-                            <div className="items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
+                            <div className="hover-effect items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-input bg-background text-foreground hover:bg-accent flex gap-2 px-2 py-1 text-[10px] transition-all duration-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe size-3" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"></circle>
                                     <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
@@ -206,12 +206,13 @@ export default function Projects() {
                         </div>
                     </div>
                 </AnimatedSection>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto relative z-10">
                     {projects.map((project, index) => (
                         <AnimatedSection 
                             key={project.title} 
                             animation="slideUp" 
-                            delay={200 + (index * 100)}
+                            delay={300 + (index * 150)}
+                            duration={500}
                         >
                             <ProjectCard project={project} />
                         </AnimatedSection>

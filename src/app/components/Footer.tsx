@@ -8,12 +8,12 @@ export default function Footer(){
     
     return(
         <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
-            <div className="fixed bottom-0 inset-x-0 h-16 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
+            <div className="fixed bottom-0 inset-x-0 h-20 w-full bg-background to-transparent backdrop-blur-lg [-webkit-mask-image:linear-gradient(to_top,black,transparent)] dark:bg-background"></div>
             <div className="group w-max p-2 rounded-full border z-50 pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-1 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] transition-all duration-300 ease-out hover:scale-[1.08] hover:-translate-y-2 hover:[box-shadow:0_8px_25px_rgba(0,0,0,.15),0_16px_40px_rgba(0,0,0,.15)] dark:hover:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset,0_8px_25px_rgba(255,255,255,.08),0_16px_40px_rgba(255,255,255,.08)]">
                 {/* Home */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <Link
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
                         data-state="closed"
                         href="/"
                     >
@@ -26,7 +26,20 @@ export default function Footer(){
                 {/* Blog */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <a
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        data-state="closed"
+                        href="#contact"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                {/* Blog */}
+                <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
+                    <a
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
                         data-state="closed"
                         href="/blog"
                     >
@@ -45,7 +58,7 @@ export default function Footer(){
                 {/* Github */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <a
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
                         data-state="closed"
                         href="https://github.com/Mak-1911"
                         target="_blank"
@@ -59,7 +72,7 @@ export default function Footer(){
                 {/* LinkedIn */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <a
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
                         data-state="closed"
                         href="https://linkedin.com/in/asifkhan1911"
                         target="_blank"
@@ -74,7 +87,7 @@ export default function Footer(){
                 {/* X (Twitter) */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <a
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 rounded-full size-12"
                         data-state="closed"
                         href="https://x.com/lilmakzi"
                         target="_blank"
@@ -91,7 +104,7 @@ export default function Footer(){
                 {/* Theme Toggle Button */}
                 <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full" style={{ width: 40 }}>
                     <button
-                        className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 h-9 w-9 rounded-full px-2"
+                        className="hover-effect inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors transition-transform focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground hover:scale-125 active:scale-95 h-9 w-9 rounded-full px-2"
                         type="button"
                         aria-label="Toggle theme"
                         onClick={toggleTheme}

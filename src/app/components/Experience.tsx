@@ -5,14 +5,13 @@ import AnimatedSection from './AnimatedSection';
 export default function Experience() {
     return (
         <section id="work">
-            
             <div className="flex min-h-0 flex-col gap-y-3 mt-10">
                 <AnimatedSection animation="slideUp" delay={100}>
                     <h2 className="text-xl font-bold">Work Experience</h2>
                 </AnimatedSection>
                 <AnimatedSection animation="slideUp" delay={200}>
-                    <a className="block cursor-pointer" href="https://ontimehire.com/">
-                        <div className="rounded-lg bg-card text-card-foreground flex">
+                    <a className="block cursor-pointer hover-effect" href="https://ontimehire.com/">
+                        <div className="rounded-lg text-card-foreground flex transition-all duration-300">
                             <div className="flex-none">
                                 <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted-background dark:bg-foreground">
                                     <Image src={OnTimeHire} alt="OnTimeHire" className="aspect-square h-full w-full" width={200} height={200} />

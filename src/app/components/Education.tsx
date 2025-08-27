@@ -10,8 +10,8 @@ export default function Education() {
                     <h2 className="text-xl font-bold">Education</h2>
                 </AnimatedSection>
                 <AnimatedSection animation="slideUp" delay={200}>
-                    <a className="block cursor-pointer" href="https://nitdgp.ac.in/">
-                        <div className="rounded-lg bg-card text-card-foreground flex">
+                    <a className="block cursor-pointer hover-effect" href="https://nitdgp.ac.in/">
+                        <div className="rounded-lg text-card-foreground flex transition-all duration-300">
                             <div className="flex-none">
                                 <span className="relative flex shrink-0 overflow-hidden rounded-full border size-12 m-auto bg-muted-background dark:bg-foreground">
                                     <Image src={EducationLogo} alt="EducationLogo" className="aspect-square h-full w-full" width={200} height={200} />
