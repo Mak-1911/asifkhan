@@ -27,7 +27,7 @@ export default function Contact() {
 
     return (
         <section id="contact">
-            <div className="flex min-h-0 flex-col gap-y-3 mt-20 mb-32">
+            <div className="flex min-h-0 flex-col gap-y-3 mt-20 mb-5">
                 <AnimatedSection animation="slideUp" delay={100}>
                     <h2 className="text-xl font-bold">Contact Me</h2>
                 </AnimatedSection>
